@@ -1,0 +1,713 @@
+<header>
+			<div class="I-header">
+				<div class="wrapper">
+					<div class="header-wrapper">
+						<div class="header-logo">
+							<img src="http://localhost:3000/img/bg-log.png">
+							<div class="logo align-justify-center">
+								<img src="https://lh3.googleusercontent.com/proxy/3lzTTaReeieoj2KrBMMIkErz6HJxEsAKlU5Xy_-8b4LwpLpOX4i_x6p7ss5uvcBH3PffQBes__vbnimo">
+							</div>
+						</div>
+						<div class="header-search align-justify-center lp fp">
+							<div class="search-wrapper">
+								<input type="" name="" placeholder="Tìm kiếm khóa học">
+								<a href="" class="align-justify-center"><i class="fas fa-search"></i></a>
+							</div>
+						</div>
+						<div class="header-action align-justify-center">
+							<a href="" class="notification">
+								<i class="far fa-bell"></i>
+								<div class="noti-count">
+									4
+								</div>
+							</a>
+							<a href="" class="avatar">
+								<img src="http://localhost:3000/img/bg-log.png">
+							</a>
+							<div class="customer-menu lp">
+								<i class="fas fa-caret-down"></i>
+								<div class="menu-wrapper">
+									<a href="/user/my-class"><i class="fas fa-book"></i>Lớp học của tôi</a>
+									<a href="/user/user-profile"><i class="fas fa-user"></i>Thông tin cá nhân</a>
+									<a href="/user/onprocessing-class"><i class="fas fa-book"></i>Yêu cầu đang xử lý</a>
+									<a href="/user/change-password"><i class="fas fa-key"></i>Đổi mật khẩu</a>
+									<a href="/user/logout"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
+								</div>
+							</div>
+							<div href="" class="btns sp open-menu"><i class="fas fa-bars"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="I-category lp">
+				<div class="wrapper">
+					<div class="category-wrapper">
+						<div class="category-item">
+							<a href="">Giới thiệu</a>
+						</div>
+						<div class="category-item">
+							<a href="">Giáo viên</a>
+							
+						</div>
+						<div class="category-item category-sub">
+							<div>Thư viện<span class="m-l-5"><i class="fas fa-caret-down"></i></span></div>
+							<div class="category-sub-wrapper">
+								<a href="" class="m-b-10">Sách A</a>
+								<a href="" class="m-b-10">Đánh giá năng lực</a>
+								<a href="" class="m-b-10">Sách A</a>
+								
+							</div>
+						</div>
+						<div class="category-item">
+							<a href="">Phòng thi</a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="I-review">
+				<div class="review-head">
+					<div class="wrapper">
+						
+					</div>
+				</div>
+				<div class="review-main">
+					<div class="wrapper">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+								<div class="course-wrapper">
+									<div class="course-item">
+										<a href=""><span class="icon"><i class="fas fa-bars"></i></span>Các khối lớp</a>
+									</div>
+									<!--Dự kiến chèn vòng lặp các khối lớp-->
+									
+									{{#each allCategory}}
+										<div class="course-item">
+											<a href=""><span class="icon"><i class="fas fa-graduation-cap"></i></span>{{this.categoryName}}</a>
+										</div>
+									{{/each}}
+									<div class="course-item">
+										<a href="/user/all-courses"><span class="icon"><i class="fas fa-bars"></i></span>Xem thêm</a>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="review-carousel">
+									<div class="owl-carousel owl-theme">
+									    <div class="carousel-item active">
+									    	<img style='max-height: 330px;' src="https://acabiz.vn/backend/images/blog_images/1886068754.jpg">
+									    </div>
+									    <div class="carousel-item">
+									    	<img style='max-height: 330px;' src="https://cls.vn/images/upload/images/329b3b9c2d1c42afb7760d8e50c79a86_eLearningFHZ18J.png">
+									    </div>
+									    <div class="carousel-item">
+									    	<img style='max-height: 330px;' src="https://amber.edu.vn/wp-content/uploads/2020/01/86.png">
+									    </div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+								<div class="review-ads">
+									<img src="https://lh5.googleusercontent.com/GbK1WwRFh3pa7g8wCtwLUiW3rSr2XMWML6Euzfoa4j6yfJEfTaNTcHDGEd0KEc18p45RobIsZSFM6cyZBQsDmCgaGTf9YgP490Dmt-gOFzILPCXciyLASlpRPuyJgk_8AmgpGqs">
+								</div>
+							</div>
+						</div>
+						<div class="review-banner">
+							<div class="review-banner-wrapper">
+								<div class="review-image">
+									<img src="http://localhost:3000/img/sbg.png">
+								</div>
+								<div class="review-top">
+									<div class="banner-item">
+										<div class="banner-image">
+											<img src="http://localhost:3000/img/member.png">
+										</div>
+										<div class="banner-title">
+											<h2>100,000</h2>
+											<p>Học viên</p>
+										</div>
+									</div>
+									<div class="banner-item">
+										<div class="banner-image">
+											<img src="http://localhost:3000/img/ptt.png">
+										</div>
+										<div class="banner-title">
+											<h2>1 Năm</h2>
+											<p>Giáo dục trực tuyến</p>
+										</div>
+									</div>
+									<div class="banner-item">
+										<div class="banner-image">
+											<img src="http://localhost:3000/img/nt.png">
+										</div>
+										<div class="banner-title">
+											<h2>Số 1 Việt Nam</h2>
+											<p>Nền tảng giáo dục</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="I-group">
+				<div class="wrapper">
+					<div class="group-wrapper">
+						<div class="group-header gr-blue">
+							Vật Lý 11
+						</div>
+						<div class="group-body">
+							<div class="group-image-wrapper">
+								<div class="group-image">
+									<img style="max-height: 290px; max-width: 475px;" src="http://localhost:3000/physics.png">
+								</div>
+							</div>
+							{{#each dataClassOne}}
+								<div class="group-item-wrapper">
+									<div class="group-item">
+										<div class="barge red">
+											Hot
+										</div>
+										<a href="" class="item-image">
+											<img style="max-height: 115px; max-width: 231px;" src="http://localhost:3000/{{this.classAvatarImg}}">
+										</a>
+										<div class="item-content">
+											<a href="/user/not-register-coursedetail/{{this.id}}" class="item-name">
+												{{this.className}}
+											</a>
+											<div class="item-teacher">
+												Giáo Viên : <a href="#aasd">Có kn 11 năm</a>
+											</div>
+											<div class="item-detail">
+												<div class="detail-item">
+													<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+												</div>
+												<div class="detail-item">
+													<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							{{/each}}
+							
+						</div>
+						<div class="group-footer">
+							
+						</div>
+					</div>
+					<div class="group-wrapper">
+						<div class="group-header gr-red">
+							Toán học 11
+						</div>
+						<div class="group-body">
+							<div class="group-image-wrapper">
+								<div class="group-image">
+									<img src="http://localhost:3000/math.png">
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<div class="barge red">
+										Hot
+									</div>
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">11 năm kn</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<div class="barge green">
+										New
+									</div>
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<div class="barge blue">
+										something...
+									</div>
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="group-footer">
+							
+						</div>
+					</div>
+					<div class="group-wrapper">
+						<div class="group-header gr-green">
+							Tiểu học
+						</div>
+						<div class="group-body">
+							<div class="group-image-wrapper">
+								<div class="group-image">
+									<img src="images/475x290.png">
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<div class="barge red">
+										Hot
+									</div>
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<div class="barge green">
+										New
+									</div>
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<div class="barge blue">
+										something...
+									</div>
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="group-item-wrapper">
+								<div class="group-item">
+									<a href="" class="item-image">
+										<img src="images/2x3.png">
+									</a>
+									<div class="item-content">
+										<a href="" class="item-name">
+											PEN-M Vật lí
+										</a>
+										<div class="item-teacher">
+											Giáo Viên : <a href="#aasd">Nguyễn Văn ANguyễn Văn A</a>
+										</div>
+										<div class="item-detail">
+											<div class="detail-item">
+												<i class="fas fa-play-circle m-r-5 red"></i><span>27</span> Bài giảng
+											</div>
+											<div class="detail-item">
+												<i class="fas fa-question-circle m-r-5 blue"></i></i><span>27</span> Câu hỏi
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="group-footer">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+		    <div class="I-footer">
+		        <div class="footer_contact">
+		            <div class="wrapper">
+		                <div class="row">
+		                    <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3">
+		                        <a href="" class="full_logo">
+		                            <img src="images/2x3.png">
+		                        </a>
+		                    </div>
+		                    <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3">
+		                        <div class="contact_wrapper">
+		                            <div class="contact_title">
+		                                <h5>Về chúng tôi</h5>
+		                            </div>
+		                            <div class="contact_content">
+		                                <span>Admin : Trần Minh Sơn</span>
+		                                <span><i class="fas fa-phone"></i> <a href="tel:0" class="telephone">(+84) 0385853267</a></span>
+		                                <span><i class="fas fa-envelope"></i> <a href="mailto:" class="time">son.tm168463@sis.hust.edu.vn</a></span>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3">
+		                        <div class="contact_wrapper">
+		                            <div class="contact_title">
+		                                <h5>Danh mục</h5>
+		                            </div>
+		                            <div class="contact_content">
+		                                <span><a href="">Tiểu học</a></span>
+		                                <span><a href="">Trung học cơ sở</a></span>
+		                                <span><a href="">Trung học phổ thông</a></span>
+		                                <span><a href="">Đại học</a></span>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3">
+		                        <div class="contact_wrapper">
+		                            <div class="contact_title">
+		                                <h5>Theo dõi chúng tôi:</h5>
+		                            </div>
+		                            <div class="contact_content">
+		                                <div class="social_wrapper">
+		                                    <a class="social-item" href="<?php echo $info->fb ?>"><i class="fab fa-facebook-f"></i></a>
+		                                    <a class="social-item" href="<?php echo $info->linkin ?>"><i class="fab fa-linkedin-in"></i></a>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="copyright">
+		            <div class="wrapper">
+		                <div class="pull-left">
+		                    Copyright © 2021. All rights reserved. 
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</footer>
+		<div class="menu sp">
+			<div class="menu-wrapper">
+				<ul class="main_navigation">
+					<li><a href="">Giới thiệu</a></li>
+					<li><a href="">Giáo viên</a></li>
+					<li><a href="">Danh mục</a></li>
+					<li class="sub_navigation">
+						<a href="">Thư viện</a>
+						<div class="sub_nav_wrapper">
+							<ul>
+								<li><a href="">Sách A</a></li>
+								<li><a href="">Sách B</a></li>
+								<li><a href="">Sách C</a></li>
+								<li><a href="">Sách D</a></li>
+								<li><a href="">Sách R</a></li>
+								<li><a href="">Sách T</a></li>
+							</ul>
+						</div>
+						<div class="open_sub">
+							<i class="fas fa-sort-down"></i>
+						</div>
+					</li>
+					<li><a href="">Phòng thi</a></li>
+					<li><a href="" class="login-button"><i class="fas fa-book"></i>Khóa học của tôi</a></li>
+					<li><a href="" class="login-button"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="https://kit.fontawesome.com/d8162761f2.js"></script>
+		<script type="text/javascript" src="http://localhost:3000/js/bootstrap3.js"></script>
+		<script type="text/javascript" src="http://localhost:3000/js/owl.carousel.js"></script>
+		<script type="text/javascript" src="http://localhost:3000/js/window.js"></script>

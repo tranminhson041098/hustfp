@@ -1,0 +1,315 @@
+<header>
+			<div class="I-header">
+				<div class="wrapper">
+					<div class="header-wrapper">
+						<div class="header-logo">
+							<img src="http://localhost:3000/img/bg-log.png">
+							<div class="logo align-justify-center">
+								<img src="http://localhost:3000/img/2x3.png">
+							</div>
+						</div>
+						<div class="header-search align-justify-center lp fp">
+							<div class="search-wrapper">
+								<input type="" name="" placeholder="Tìm kiếm khóa học">
+								<a href="" class="align-justify-center"><i class="fas fa-search"></i></a>
+							</div>
+						</div>
+						<div class="header-action align-justify-center">
+							<a href="" class="notification">
+								<i class="far fa-bell"></i>
+								<div class="noti-count">
+									4
+								</div>
+							</a>
+							<a href="" class="avatar">
+								<img src="http://localhost:3000/img/bg-log.png">
+							</a>
+							<div class="customer-menu lp">
+								<i class="fas fa-caret-down"></i>
+								<div class="menu-wrapper">
+									<a href="/user/my-class"><i class="fas fa-book"></i>Lớp học của tôi</a>
+									<a href=""><i class="fas fa-user"></i>Thông tin cá nhân</a>
+									<a href="/user/onprocessing-class"><i class="fas fa-book"></i>Yêu cầu đang xử lý</a>
+									<a href=""><i class="fas fa-key"></i>Đổi mật khẩu</a>
+									<a href="/user/logout"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
+								</div>
+							</div>
+							<div href="" class="btns sp open-menu"><i class="fas fa-bars"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="I-customer">
+				<div class="wrapper">
+					<div class="customer-wrapper">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+								<div class="customer-nav">
+									<a href="" class="is-active">Thông tin cá nhân</a>
+									<a href="">Khóa học của tôi</a>
+									<a href="">Thông báo</a>
+									<a href="">Đổi mật khẩu</a>
+                                    <a href="/user/onprocessing-class">Khóa học đang xử lý</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+								<div class="customer-main">
+									<h3 class="m-b-20">Các khóa học đang chờ phê duyệt</h3>
+									
+										<div class="course-list-wrapper">
+											{{#each onprocessingClass}}
+												<div class="course-list-title m-b-10">
+													{{this.cate}}
+												</div>
+												<div class="row">
+													{{#if this.key1.className}}
+														<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+															<div class="course-item">
+																<div class="item-image">
+																	<img src="images/2x3.png">
+																</div>
+																<div class="item-body">
+																	<a href="" class="title">{{this.key0.className}} </a>
+																	<p> Học phí trọn gói: 400.000 đồng </p> 
+																	<p>Ngày bế giảng: 30-06-2022 </p> 
+																	<p>Giáo viên: Cô Đỗ Khánh Phượng </p>
+																	<a href="" class="view">Truy cập</a>
+																</div>
+															</div>
+														</div>
+													{{else }}
+																	
+														{{/if }}
+													{{#if this.key2.className}}
+														<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+															<div class="course-item">
+																<div class="item-image">
+																	<img src="images/2x3.png">
+																</div>
+																<div class="item-body">
+																	<a href="" class="title">{{this.key1.className}} </a>
+																	<p> Học phí trọn gói: 400.000 đồng </p> 
+																	<p>Ngày bế giảng: 30-06-2022 </p> 
+																	<p>Giáo viên: Cô Đỗ Khánh Phượng </p>
+																	<a href="" class="view">Truy cập</a>
+																</div>
+															</div>
+														</div>
+													{{else }}
+																	
+														{{/if }}
+													{{#if this.key3.className}}
+														<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+															<div class="course-item">
+																<div class="item-image">
+																	<img src="images/2x3.png">
+																</div>
+																<div class="item-body">
+																	<a href="" class="title">Luyện thi vào lớp 10 môn Ngữ Văn </a>
+																	<p> Học phí trọn gói: 400.000 đồng </p> 
+																	<p>Ngày bế giảng: 30-06-2022 </p> 
+																	<p>Giáo viên: Cô Đỗ Khánh Phượng </p>
+																	<a href="" class="view">Truy cập</a>
+																</div>
+															</div>
+														</div>
+													{{else }}
+																	
+														{{/if }}
+													{{#if this.key4.className}}
+													<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+														<div class="course-item">
+															<div class="item-image">
+																<img src="images/2x3.png">
+															</div>
+															<div class="item-body">
+																<a href="" class="title">Luyện thi vào lớp 10 môn Ngữ Văn </a>
+																<p> Học phí trọn gói: 400.000 đồng </p> 
+																<p>Ngày bế giảng: 30-06-2022 </p> 
+																<p>Giáo viên: Cô Đỗ Khánh Phượng </p>
+																<a href="" class="view">Truy cập</a>
+															</div>
+														</div>
+													</div>
+													{{else }}
+																	
+														{{/if }}
+													{{#if this.key5.className}}
+													<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+														<div class="course-item">
+															<div class="item-image">
+																<img src="images/2x3.png">
+															</div>
+															<div class="item-body">
+																<a href="" class="title">Luyện thi vào lớp 10 môn Ngữ Văn </a>
+																<p> Học phí trọn gói: 400.000 đồng </p> 
+																<p>Ngày bế giảng: 30-06-2022 </p> 
+																<p>Giáo viên: Cô Đỗ Khánh Phượng </p>
+																<a href="" class="view">Truy cập</a>
+															</div>
+														</div>
+													</div>
+													{{else }}
+																	
+														{{/if }}
+													{{#if this.key6.className}}
+													<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+														<div class="course-item">
+															<div class="item-image">
+																<img src="images/2x3.png">
+															</div>
+															<div class="item-body">
+																<a href="" class="title">Luyện thi vào lớp 10 môn Ngữ Văn </a>
+																<p> Học phí trọn gói: 400.000 đồng </p> 
+																<p>Ngày bế giảng: 30-06-2022 </p> 
+																<p>Giáo viên: Cô Đỗ Khánh Phượng </p>
+																<a href="" class="view">Truy cập</a>
+															</div>
+														</div>
+													</div>
+													{{else }}
+																	
+														{{/if }}
+													{{#if this.key7.className}}
+													<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+														<div class="course-item">
+															<div class="item-image">
+																<img src="images/2x3.png">
+															</div>
+															<div class="item-body">
+																<a href="" class="title">Luyện thi vào lớp 10 môn Ngữ Văn </a>
+																<p> Học phí trọn gói: 400.000 đồng </p> 
+																<p>Ngày bế giảng: 30-06-2022 </p> 
+																<p>Giáo viên: Cô Đỗ Khánh Phượng </p>
+																<a href="" class="view">Truy cập</a>
+															</div>
+														</div>
+													</div>
+													{{else }}
+																	
+														{{/if }}
+													{{#if this.key8.className}}
+													<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+														<div class="course-item">
+															<div class="item-image">
+																<img src="images/2x3.png">
+															</div>
+															<div class="item-body">
+																<a href="" class="title">Luyện thi vào lớp 10 môn Ngữ Văn </a>
+																<p> Học phí trọn gói: 400.000 đồng </p> 
+																<p>Ngày bế giảng: 30-06-2022 </p> 
+																<p>Giáo viên: Cô Đỗ Khánh Phượng </p>
+																<a href="" class="view">Truy cập</a>
+															</div>
+														</div>
+													</div>
+													{{else }}
+																	
+														{{/if }}
+													
+												</div>
+											{{/each}}
+										</div>
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+		    <div class="I-footer">
+		        <div class="footer_contact">
+		            <div class="wrapper">
+		                <div class="row">
+		                    <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3">
+		                        <a href="" class="full_logo">
+		                            <img src="images/2x3.png">
+		                        </a>
+		                    </div>
+		                    <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3">
+		                        <div class="contact_wrapper">
+		                            <div class="contact_title">
+		                                <h5>Về chúng tôi</h5>
+		                            </div>
+		                            <div class="contact_content">
+		                                <span>Đâu đó ở Hà nội</span>
+		                                <span><i class="fas fa-phone"></i> <a href="tel:0" class="telephone">(+84) 123456789</a></span>
+		                                <span><i class="fas fa-envelope"></i> <a href="mailto:" class="time">abc@gmail.com</a></span>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3">
+		                        <div class="contact_wrapper">
+		                            <div class="contact_title">
+		                                <h5>Danh mục</h5>
+		                            </div>
+		                            <div class="contact_content">
+		                                <span><a href="">Tiểu học</a></span>
+		                                <span><a href="">Trung học cơ sở</a></span>
+		                                <span><a href="">Trung học phổ thông</a></span>
+		                                <span><a href="">Đại học</a></span>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3">
+		                        <div class="contact_wrapper">
+		                            <div class="contact_title">
+		                                <h5>Theo dõi chúng tôi:</h5>
+		                            </div>
+		                            <div class="contact_content">
+		                                <div class="social_wrapper">
+		                                    <a class="social-item" href="<?php echo $info->fb ?>"><i class="fab fa-facebook-f"></i></a>
+		                                    <a class="social-item" href="<?php echo $info->linkin ?>"><i class="fab fa-linkedin-in"></i></a>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="copyright">
+		            <div class="wrapper">
+		                <div class="pull-left">
+		                    Copyright © 2021. All rights reserved. 
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</footer>
+		<div class="menu sp">
+			<div class="menu-wrapper">
+				<ul class="main_navigation">
+					<li><a href="">Giới thiệu</a></li>
+					<li><a href="">Giáo viên</a></li>
+					<li><a href="">Danh mục</a></li>
+					<li class="sub_navigation">
+						<a href="">Thư viện</a>
+						<div class="sub_nav_wrapper">
+							<ul>
+								<li><a href="">Sách A</a></li>
+								<li><a href="">Sách B</a></li>
+								<li><a href="">Sách C</a></li>
+								<li><a href="">Sách D</a></li>
+								<li><a href="">Sách R</a></li>
+								<li><a href="">Sách T</a></li>
+							</ul>
+						</div>
+						<div class="open_sub">
+							<i class="fas fa-sort-down"></i>
+						</div>
+					</li>
+					<li><a href="">Phòng thi</a></li>
+					<li><a href="" class="login-button">Đăng nhập</a></li>
+					<li><a href="" class="login-button">Đăng kí</a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="https://kit.fontawesome.com/d8162761f2.js"></script>
+		<script type="text/javascript" src="http://localhost:3000/js/bootstrap3.js"></script>
+		<script type="text/javascript" src="http://localhost:3000/js/owl.carousel.js"></script>
+		<script type="text/javascript" src="http://localhost:3000/js/window.js"></script>
